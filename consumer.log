@@ -1,0 +1,677 @@
+2021-08-05 11:23:34.695  INFO 736 --- [main] c.e.SpringRabbitMQConsumerApplication    : Starting SpringRabbitMQConsumerApplication on EVOKE-CVD-16 with PID 736 (C:\Users\ypasha\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\spring-rabbitmq-consumer\target\classes started by ypasha in C:\Users\ypasha\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\spring-rabbitmq-consumer)
+2021-08-05 11:23:34.697  INFO 736 --- [main] c.e.SpringRabbitMQConsumerApplication    : No active profile set, falling back to default profiles: default
+2021-08-05 11:23:34.730  INFO 736 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 11:23:34 IST 2021]; root of context hierarchy
+2021-08-05 11:23:35.267  INFO 736 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$98baa3e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-05 11:23:35.430  INFO 736 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2021-08-05 11:23:35.437  INFO 736 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-05 11:23:35.438  INFO 736 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-05 11:23:35.499  INFO 736 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-05 11:23:35.499  INFO 736 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 775 ms
+2021-08-05 11:23:35.603  INFO 736 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-05 11:23:35.605  INFO 736 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-05 11:23:35.606  INFO 736 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-05 11:23:35.606  INFO 736 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-05 11:23:35.606  INFO 736 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-05 11:23:35.774  INFO 736 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 11:23:34 IST 2021]; root of context hierarchy
+2021-08-05 11:23:35.814  INFO 736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-05 11:23:35.815  INFO 736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-05 11:23:35.834  INFO 736 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 11:23:35.835  INFO 736 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 11:23:35.859  INFO 736 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 11:23:36.030  INFO 736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-05 11:23:36.035  INFO 736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-05 11:23:36.036  INFO 736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-05 11:23:36.058  INFO 736 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-05 11:23:36.058  INFO 736 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-05 11:23:36.642  INFO 736 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@7133964c [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 49493]
+2021-08-05 11:23:37.166  INFO 736 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2021-08-05 11:23:37.167  INFO 736 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Message recieved from queue :Employee [empName=emp5, empId=105]
+2021-08-05 11:23:37.170  INFO 736 --- [main] c.e.SpringRabbitMQConsumerApplication    : Started SpringRabbitMQConsumerApplication in 2.653 seconds (JVM running for 3.156)
+2021-08-05 11:23:37.270  INFO 736 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Message recieved from queue :Employee [empName=emp5, empId=105]
+2021-08-05 11:23:37.360  INFO 736 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Message recieved from queue :Employee [empName=emp5, empId=105]
+2021-08-05 11:26:56.938  INFO 736 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Message recieved from queue :Employee [empName=emp5, empId=105]
+2021-08-05 11:28:14.772  INFO 736 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-05 11:28:14.773  INFO 736 --- [RMI TCP Connection(14)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 11:23:34 IST 2021]; root of context hierarchy
+2021-08-05 11:28:14.774  INFO 736 --- [RMI TCP Connection(14)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-05 11:28:14.890  INFO 736 --- [RMI TCP Connection(14)-127.0.0.1] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2021-08-05 11:28:15.721  INFO 736 --- [RMI TCP Connection(14)-127.0.0.1] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2021-08-05 11:28:15.721  INFO 736 --- [RMI TCP Connection(14)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-05 11:28:15.802  INFO 736 --- [RMI TCP Connection(14)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-05 11:28:15.802  INFO 736 --- [RMI TCP Connection(14)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-08-05 11:28:45.220  INFO 15236 --- [main] c.e.SpringRabbitMQConsumerApplication    : Starting SpringRabbitMQConsumerApplication on EVOKE-CVD-16 with PID 15236 (C:\Users\ypasha\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\spring-rabbitmq-consumer\target\classes started by ypasha in C:\Users\ypasha\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\spring-rabbitmq-consumer)
+2021-08-05 11:28:45.222  INFO 15236 --- [main] c.e.SpringRabbitMQConsumerApplication    : No active profile set, falling back to default profiles: default
+2021-08-05 11:28:45.255  INFO 15236 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 11:28:45 IST 2021]; root of context hierarchy
+2021-08-05 11:28:45.768  INFO 15236 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$edf8cae1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-05 11:28:45.931  INFO 15236 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2021-08-05 11:28:45.939  INFO 15236 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-05 11:28:45.941  INFO 15236 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-05 11:28:46.007  INFO 15236 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-05 11:28:46.007  INFO 15236 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 757 ms
+2021-08-05 11:28:46.110  INFO 15236 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-05 11:28:46.113  INFO 15236 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-05 11:28:46.113  INFO 15236 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-05 11:28:46.113  INFO 15236 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-05 11:28:46.113  INFO 15236 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-05 11:28:46.283  INFO 15236 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 11:28:45 IST 2021]; root of context hierarchy
+2021-08-05 11:28:46.323  INFO 15236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-05 11:28:46.324  INFO 15236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-05 11:28:46.344  INFO 15236 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 11:28:46.344  INFO 15236 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 11:28:46.369  INFO 15236 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 11:28:46.542  INFO 15236 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-05 11:28:46.547  INFO 15236 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-05 11:28:46.548  INFO 15236 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-05 11:28:46.573  INFO 15236 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-05 11:28:46.573  INFO 15236 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-05 11:28:47.034  INFO 15236 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@54fbed38 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 53374]
+2021-08-05 11:28:47.544  INFO 15236 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2021-08-05 11:28:47.545  INFO 15236 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Message recieved from queue :Employee [empName=emp5, empId=105]
+2021-08-05 11:28:47.548  INFO 15236 --- [main] c.e.SpringRabbitMQConsumerApplication    : Started SpringRabbitMQConsumerApplication in 2.506 seconds (JVM running for 3.009)
+2021-08-05 12:02:23.944  INFO 15236 --- [RMI TCP Connection(44)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-05 12:02:23.945  INFO 15236 --- [RMI TCP Connection(44)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 11:28:45 IST 2021]; root of context hierarchy
+2021-08-05 12:02:23.947  INFO 15236 --- [RMI TCP Connection(44)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-05 12:02:24.115  INFO 15236 --- [RMI TCP Connection(44)-127.0.0.1] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2021-08-05 12:02:24.607  INFO 15236 --- [RMI TCP Connection(44)-127.0.0.1] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2021-08-05 12:02:24.607  INFO 15236 --- [RMI TCP Connection(44)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-05 12:02:24.734  INFO 15236 --- [RMI TCP Connection(44)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-05 12:02:24.735  INFO 15236 --- [RMI TCP Connection(44)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-08-05 12:18:12.380  INFO 25384 --- [main] c.e.SpringRabbitMQConsumerApplication    : Starting SpringRabbitMQConsumerApplication on EVOKE-CVD-16 with PID 25384 (C:\Users\ypasha\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\spring-rabbitmq-consumer\target\classes started by ypasha in C:\Users\ypasha\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\spring-rabbitmq-consumer)
+2021-08-05 12:18:12.382  INFO 25384 --- [main] c.e.SpringRabbitMQConsumerApplication    : No active profile set, falling back to default profiles: default
+2021-08-05 12:18:12.418  INFO 25384 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 12:18:12 IST 2021]; root of context hierarchy
+2021-08-05 12:18:12.930  INFO 25384 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$82e58ee6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-05 12:18:13.096  INFO 25384 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2021-08-05 12:18:13.104  INFO 25384 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-05 12:18:13.105  INFO 25384 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-05 12:18:13.164  INFO 25384 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/consumer-api]  : Initializing Spring embedded WebApplicationContext
+2021-08-05 12:18:13.164  INFO 25384 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 751 ms
+2021-08-05 12:18:13.263  INFO 25384 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-05 12:18:13.266  INFO 25384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-05 12:18:13.266  INFO 25384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-05 12:18:13.266  INFO 25384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-05 12:18:13.266  INFO 25384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-05 12:18:13.435  INFO 25384 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 12:18:12 IST 2021]; root of context hierarchy
+2021-08-05 12:18:13.474  INFO 25384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-05 12:18:13.475  INFO 25384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-05 12:18:13.495  INFO 25384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 12:18:13.496  INFO 25384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 12:18:13.520  INFO 25384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 12:18:13.694  INFO 25384 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-05 12:18:13.699  INFO 25384 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-05 12:18:13.701  INFO 25384 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-05 12:18:13.723  INFO 25384 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-05 12:18:13.723  INFO 25384 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-05 12:18:14.341  INFO 25384 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@5096e771 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 52784]
+2021-08-05 12:18:14.831  INFO 25384 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2021-08-05 12:18:14.833  INFO 25384 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Message recieved from queue :Employee [empName=emp5, empId=105]
+2021-08-05 12:18:14.835  INFO 25384 --- [main] c.e.SpringRabbitMQConsumerApplication    : Started SpringRabbitMQConsumerApplication in 2.632 seconds (JVM running for 3.116)
+2021-08-05 12:18:14.929  INFO 25384 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Message recieved from queue :Employee [empName=emp5, empId=105]
+2021-08-05 12:18:15.016  INFO 25384 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Message recieved from queue :Employee [empName=emp5, empId=105]
+2021-08-05 12:18:15.117  INFO 25384 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Message recieved from queue :Employee [empName=emp100, empId=100]
+2021-08-05 12:20:20.381  INFO 25384 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-05 12:20:20.382  INFO 25384 --- [RMI TCP Connection(10)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 12:18:12 IST 2021]; root of context hierarchy
+2021-08-05 12:20:20.384  INFO 25384 --- [RMI TCP Connection(10)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-05 12:20:20.532  INFO 25384 --- [RMI TCP Connection(10)-127.0.0.1] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2021-08-05 12:20:21.913  INFO 25384 --- [RMI TCP Connection(10)-127.0.0.1] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2021-08-05 12:20:21.915  INFO 25384 --- [RMI TCP Connection(10)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-05 12:20:22.013  INFO 25384 --- [RMI TCP Connection(10)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-05 12:20:22.013  INFO 25384 --- [RMI TCP Connection(10)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-08-05 12:21:04.384  INFO 23812 --- [main] c.e.SpringRabbitMQConsumerApplication    : Starting SpringRabbitMQConsumerApplication on EVOKE-CVD-16 with PID 23812 (C:\Users\ypasha\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\spring-rabbitmq-consumer\target\classes started by ypasha in C:\Users\ypasha\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\spring-rabbitmq-consumer)
+2021-08-05 12:21:04.386  INFO 23812 --- [main] c.e.SpringRabbitMQConsumerApplication    : No active profile set, falling back to default profiles: default
+2021-08-05 12:21:04.426  INFO 23812 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 12:21:04 IST 2021]; root of context hierarchy
+2021-08-05 12:21:04.929  INFO 23812 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$f64ca120] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-05 12:21:05.095  INFO 23812 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2021-08-05 12:21:05.102  INFO 23812 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-05 12:21:05.103  INFO 23812 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-05 12:21:05.161  INFO 23812 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/consumer-api]  : Initializing Spring embedded WebApplicationContext
+2021-08-05 12:21:05.161  INFO 23812 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 740 ms
+2021-08-05 12:21:05.261  INFO 23812 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-05 12:21:05.263  INFO 23812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-05 12:21:05.264  INFO 23812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-05 12:21:05.264  INFO 23812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-05 12:21:05.264  INFO 23812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-05 12:21:05.441  INFO 23812 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 12:21:04 IST 2021]; root of context hierarchy
+2021-08-05 12:21:05.482  INFO 23812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-05 12:21:05.483  INFO 23812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-05 12:21:05.502  INFO 23812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 12:21:05.502  INFO 23812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 12:21:05.528  INFO 23812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 12:21:05.700  INFO 23812 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-05 12:21:05.704  INFO 23812 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-05 12:21:05.706  INFO 23812 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-05 12:21:05.727  INFO 23812 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-05 12:21:05.727  INFO 23812 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-05 12:21:06.230  INFO 23812 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@317dfce3 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 61756]
+2021-08-05 12:21:06.719  INFO 23812 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2021-08-05 12:21:06.720  INFO 23812 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Message recieved from queue :Employee [empName=emp100, empId=100]
+2021-08-05 12:21:06.723  INFO 23812 --- [main] c.e.SpringRabbitMQConsumerApplication    : Started SpringRabbitMQConsumerApplication in 2.512 seconds (JVM running for 2.997)
+2021-08-05 12:50:08.281  INFO 23812 --- [RMI TCP Connection(37)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-05 12:50:08.282  INFO 23812 --- [RMI TCP Connection(37)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 12:21:04 IST 2021]; root of context hierarchy
+2021-08-05 12:50:08.284  INFO 23812 --- [RMI TCP Connection(37)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-05 12:50:08.422  INFO 23812 --- [RMI TCP Connection(37)-127.0.0.1] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2021-08-05 12:50:09.262  INFO 23812 --- [RMI TCP Connection(37)-127.0.0.1] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2021-08-05 12:50:09.262  INFO 23812 --- [RMI TCP Connection(37)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-05 12:50:09.365  INFO 23812 --- [RMI TCP Connection(37)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-05 12:50:09.365  INFO 23812 --- [RMI TCP Connection(37)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-08-05 12:52:39.251  INFO 23056 --- [main] c.e.SpringRabbitMQConsumerApplication    : Starting SpringRabbitMQConsumerApplication on EVOKE-CVD-16 with PID 23056 (C:\Users\ypasha\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\spring-rabbitmq-consumer\target\classes started by ypasha in C:\Users\ypasha\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\spring-rabbitmq-consumer)
+2021-08-05 12:52:39.253  INFO 23056 --- [main] c.e.SpringRabbitMQConsumerApplication    : No active profile set, falling back to default profiles: default
+2021-08-05 12:52:39.277  INFO 23056 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@600b90df: startup date [Thu Aug 05 12:52:39 IST 2021]; root of context hierarchy
+2021-08-05 12:52:39.800  INFO 23056 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$ea79674f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-05 12:52:39.962  INFO 23056 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2021-08-05 12:52:39.969  INFO 23056 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-05 12:52:39.970  INFO 23056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-05 12:52:40.032  INFO 23056 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/consumer-api]  : Initializing Spring embedded WebApplicationContext
+2021-08-05 12:52:40.032  INFO 23056 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 755 ms
+2021-08-05 12:52:40.131  INFO 23056 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-05 12:52:40.133  INFO 23056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-05 12:52:40.134  INFO 23056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-05 12:52:40.134  INFO 23056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-05 12:52:40.134  INFO 23056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-05 12:52:40.300  INFO 23056 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@600b90df: startup date [Thu Aug 05 12:52:39 IST 2021]; root of context hierarchy
+2021-08-05 12:52:40.341  INFO 23056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-05 12:52:40.341  INFO 23056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-05 12:52:40.360  INFO 23056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 12:52:40.360  INFO 23056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 12:52:40.385  INFO 23056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 12:52:40.559  INFO 23056 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-05 12:52:40.563  INFO 23056 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-05 12:52:40.565  INFO 23056 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-05 12:52:40.586  INFO 23056 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-05 12:52:40.586  INFO 23056 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-05 12:52:41.038  INFO 23056 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@69700f37 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 49544]
+2021-08-05 12:52:41.483  INFO 23056 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2021-08-05 12:52:41.484  INFO 23056 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Message recieved from queue :Employee [empName=emp100, empId=100]
+2021-08-05 12:52:41.487  INFO 23056 --- [main] c.e.SpringRabbitMQConsumerApplication    : Started SpringRabbitMQConsumerApplication in 2.41 seconds (JVM running for 2.887)
+2021-08-05 13:08:10.838  INFO 23056 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Message recieved from queue :Employee [empName=emp100, empId=100]
+2021-08-05 13:08:53.713  INFO 23056 --- [RMI TCP Connection(24)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-05 13:08:53.714  INFO 23056 --- [RMI TCP Connection(24)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@600b90df: startup date [Thu Aug 05 12:52:39 IST 2021]; root of context hierarchy
+2021-08-05 13:08:53.715  INFO 23056 --- [RMI TCP Connection(24)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-05 13:08:53.814  INFO 23056 --- [RMI TCP Connection(24)-127.0.0.1] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2021-08-05 13:08:54.361  INFO 23056 --- [RMI TCP Connection(24)-127.0.0.1] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2021-08-05 13:08:54.362  INFO 23056 --- [RMI TCP Connection(24)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-05 13:08:54.493  INFO 23056 --- [RMI TCP Connection(24)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-05 13:08:54.493  INFO 23056 --- [RMI TCP Connection(24)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-08-05 13:10:09.573  INFO 21240 --- [main] c.e.SpringRabbitMQConsumerApplication    : Starting SpringRabbitMQConsumerApplication on EVOKE-CVD-16 with PID 21240 (C:\Users\ypasha\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\spring-rabbitmq-consumer\target\classes started by ypasha in C:\Users\ypasha\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\spring-rabbitmq-consumer)
+2021-08-05 13:10:09.575  INFO 21240 --- [main] c.e.SpringRabbitMQConsumerApplication    : No active profile set, falling back to default profiles: default
+2021-08-05 13:10:09.608  INFO 21240 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 13:10:09 IST 2021]; root of context hierarchy
+2021-08-05 13:10:10.212  INFO 21240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$5e12b67a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-05 13:10:10.386  INFO 21240 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2021-08-05 13:10:10.394  INFO 21240 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-05 13:10:10.394  INFO 21240 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-05 13:10:10.463  INFO 21240 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/consumer-api]  : Initializing Spring embedded WebApplicationContext
+2021-08-05 13:10:10.463  INFO 21240 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 860 ms
+2021-08-05 13:10:10.570  INFO 21240 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-05 13:10:10.573  INFO 21240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-05 13:10:10.574  INFO 21240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-05 13:10:10.574  INFO 21240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-05 13:10:10.575  INFO 21240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-05 13:10:10.778  INFO 21240 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 13:10:09 IST 2021]; root of context hierarchy
+2021-08-05 13:10:10.825  INFO 21240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-05 13:10:10.825  INFO 21240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-05 13:10:10.847  INFO 21240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 13:10:10.847  INFO 21240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 13:10:10.877  INFO 21240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 13:10:11.060  INFO 21240 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-05 13:10:11.065  INFO 21240 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-05 13:10:11.067  INFO 21240 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-05 13:10:11.093  INFO 21240 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-05 13:10:11.094  INFO 21240 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-05 13:10:11.776  INFO 21240 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@1b328ce3 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 53823]
+2021-08-05 13:10:12.283  INFO 21240 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2021-08-05 13:10:12.285  INFO 21240 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Message recieved from queue :Employee [empName=emp100, empId=100]
+2021-08-05 13:10:12.287  INFO 21240 --- [main] c.e.SpringRabbitMQConsumerApplication    : Started SpringRabbitMQConsumerApplication in 2.886 seconds (JVM running for 3.425)
+2021-08-05 14:02:15.785  WARN 21240 --- [AMQP Connection 13.235.108.82:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured (Exception message: Connection reset)
+2021-08-05 14:02:15.788 ERROR 21240 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: connection error
+2021-08-05 14:02:16.453  INFO 21240 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@39ffda4a: tags=[{amq.ctag-75bZrpllT0iLFCU1Lt-TfQ=2154-queue1}], channel=Cached Rabbit Channel: AMQChannel(amqp://appuser@13.235.108.82:5672/,1), conn: Proxy@1d7f305c Shared Rabbit Connection: SimpleConnection@1b328ce3 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 53823], acknowledgeMode=AUTO local queue size=0
+2021-08-05 14:02:21.597  INFO 21240 --- [SimpleAsyncTaskExecutor-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@543233aa: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-08-05 14:02:22.003  INFO 21240 --- [SimpleAsyncTaskExecutor-3] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@8ce676 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 58086]
+2021-08-05 14:11:51.960  WARN 21240 --- [AMQP Connection 13.235.108.82:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured (Exception message: Connection reset)
+2021-08-05 14:11:51.962 ERROR 21240 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: connection error
+2021-08-05 14:11:52.689  INFO 21240 --- [SimpleAsyncTaskExecutor-3] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6babe66d: tags=[{amq.ctag-6FRGREdWiDDn0HrClISabQ=2154-queue1}], channel=Cached Rabbit Channel: AMQChannel(amqp://appuser@13.235.108.82:5672/,1), conn: Proxy@1d7f305c Shared Rabbit Connection: SimpleConnection@8ce676 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 58086], acknowledgeMode=AUTO local queue size=0
+2021-08-05 14:11:52.968  INFO 21240 --- [SimpleAsyncTaskExecutor-4] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@4042d1e3 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 60769]
+2021-08-05 15:33:54.943  WARN 21240 --- [AMQP Connection 13.235.108.82:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured (Exception message: Connection reset)
+2021-08-05 15:33:54.944 ERROR 21240 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: connection error
+2021-08-05 15:33:54.944 ERROR 21240 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: connection error
+2021-08-05 15:33:55.707  INFO 21240 --- [SimpleAsyncTaskExecutor-4] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@41b1ec4d: tags=[{amq.ctag-oWmV3nmTxfbdIUA8VP8TBw=2154-queue1}], channel=Cached Rabbit Channel: AMQChannel(amqp://appuser@13.235.108.82:5672/,2), conn: Proxy@1d7f305c Shared Rabbit Connection: SimpleConnection@4042d1e3 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 60769], acknowledgeMode=AUTO local queue size=0
+2021-08-05 15:33:56.003  INFO 21240 --- [SimpleAsyncTaskExecutor-5] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@6ffbfba4 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 56770]
+2021-08-05 16:51:15.785  INFO 21240 --- [RMI TCP Connection(211)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-05 16:51:15.786  INFO 21240 --- [RMI TCP Connection(211)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 13:10:09 IST 2021]; root of context hierarchy
+2021-08-05 16:51:15.788  INFO 21240 --- [RMI TCP Connection(211)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-05 16:51:15.854  INFO 21240 --- [RMI TCP Connection(211)-127.0.0.1] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2021-08-05 16:51:16.199  INFO 21240 --- [RMI TCP Connection(211)-127.0.0.1] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2021-08-05 16:51:16.201  INFO 21240 --- [RMI TCP Connection(211)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-05 16:51:16.319  INFO 21240 --- [RMI TCP Connection(211)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-05 16:51:16.320  INFO 21240 --- [RMI TCP Connection(211)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-08-05 17:09:06.408  INFO 328 --- [main] c.e.SpringRabbitMQConsumerApplication    : Starting SpringRabbitMQConsumerApplication on EVOKE-CVD-16 with PID 328 (C:\Users\ypasha\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\spring-rabbitmq-consumer\target\classes started by ypasha in C:\Users\ypasha\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\spring-rabbitmq-consumer)
+2021-08-05 17:09:06.410  INFO 328 --- [main] c.e.SpringRabbitMQConsumerApplication    : No active profile set, falling back to default profiles: default
+2021-08-05 17:09:06.450  INFO 328 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 17:09:06 IST 2021]; root of context hierarchy
+2021-08-05 17:09:06.957  INFO 328 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$d5afd96d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-05 17:09:07.118  INFO 328 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2021-08-05 17:09:07.125  INFO 328 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-05 17:09:07.126  INFO 328 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-05 17:09:07.186  INFO 328 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/consumer-api]  : Initializing Spring embedded WebApplicationContext
+2021-08-05 17:09:07.187  INFO 328 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 744 ms
+2021-08-05 17:09:07.292  INFO 328 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-05 17:09:07.294  INFO 328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-05 17:09:07.295  INFO 328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-05 17:09:07.295  INFO 328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-05 17:09:07.295  INFO 328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-05 17:09:07.465  INFO 328 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 17:09:06 IST 2021]; root of context hierarchy
+2021-08-05 17:09:07.505  INFO 328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-05 17:09:07.506  INFO 328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-05 17:09:07.527  INFO 328 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 17:09:07.527  INFO 328 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 17:09:07.553  INFO 328 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 17:09:07.738  INFO 328 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-05 17:09:07.742  INFO 328 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-05 17:09:07.744  INFO 328 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-05 17:09:07.769  INFO 328 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-05 17:09:07.770  INFO 328 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-05 17:09:08.236  INFO 328 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@556a25e2 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 58209]
+2021-08-05 17:09:08.652  INFO 328 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2021-08-05 17:09:08.655  INFO 328 --- [main] c.e.SpringRabbitMQConsumerApplication    : Started SpringRabbitMQConsumerApplication in 2.422 seconds (JVM running for 2.919)
+2021-08-05 17:09:08.695  WARN 328 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.r.RejectAndDontRequeueRecoverer  : Retries exhausted for message (Body:'{"@id":1,"empName":"emp1234","empId":"100"}' MessageProperties [headers={__TypeId__=com.evoke.model.Employee}, timestamp=null, messageId=null, userId=null, receivedUserId=null, appId=null, clusterId=null, type=null, correlationId=null, correlationIdString=null, replyTo=null, contentType=application/json, contentEncoding=UTF-8, contentLength=0, deliveryMode=null, receivedDeliveryMode=PERSISTENT, expiration=null, priority=0, redelivered=false, receivedExchange=2154-exchange, receivedRoutingKey=2154-routingkey, receivedDelay=null, deliveryTag=1, messageCount=0, consumerTag=amq.ctag-BCxauDsHkl_cfoXBE2SKwQ, consumerQueue=2154-queue1])
+
+org.springframework.amqp.rabbit.listener.exception.ListenerExecutionFailedException: Listener method 'public void com.evoke.consumer.RabbitMQReceiver.consumeMessageFromQueue(org.springframework.amqp.core.Message) throws com.evoke.exception.InvalidEmployeeNameException' threw exception
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:140) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:106) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:822) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:745) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$001(SimpleMessageListenerContainer.java:97) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$1.invokeListener(SimpleMessageListenerContainer.java:189) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:91) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:286) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:179) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:115) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at com.sun.proxy.$Proxy66.invokeListener(Unknown Source) ~[na:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.invokeListener(SimpleMessageListenerContainer.java:1276) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:726) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:1219) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:1189) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1500(SimpleMessageListenerContainer.java:97) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1421) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: com.evoke.exception.InvalidEmployeeNameException: null
+	at com.evoke.consumer.RabbitMQReceiver.consumeMessageFromQueue(RabbitMQReceiver.java:27) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180) ~[spring-messaging-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112) ~[spring-messaging-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:49) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:126) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	... 26 common frames omitted
+
+2021-08-05 17:09:08.696  WARN 328 --- [SimpleAsyncTaskExecutor-1] s.a.r.l.ConditionalRejectingErrorHandler : Execution of Rabbit message listener failed.
+
+org.springframework.amqp.rabbit.listener.exception.ListenerExecutionFailedException: Retry Policy Exhausted
+	at org.springframework.amqp.rabbit.retry.RejectAndDontRequeueRecoverer.recover(RejectAndDontRequeueRecoverer.java:45) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.config.StatelessRetryOperationsInterceptorFactoryBean$1.recover(StatelessRetryOperationsInterceptorFactoryBean.java:66) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.config.StatelessRetryOperationsInterceptorFactoryBean$1.recover(StatelessRetryOperationsInterceptorFactoryBean.java:59) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$ItemRecovererCallback.recover(RetryOperationsInterceptor.java:141) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.handleRetryExhausted(RetryTemplate.java:512) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:350) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:179) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:115) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at com.sun.proxy.$Proxy66.invokeListener(Unknown Source) ~[na:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.invokeListener(SimpleMessageListenerContainer.java:1276) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:726) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:1219) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:1189) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1500(SimpleMessageListenerContainer.java:97) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1421) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.amqp.AmqpRejectAndDontRequeueException: org.springframework.amqp.rabbit.listener.exception.ListenerExecutionFailedException: Listener method 'public void com.evoke.consumer.RabbitMQReceiver.consumeMessageFromQueue(org.springframework.amqp.core.Message) throws com.evoke.exception.InvalidEmployeeNameException' threw exception
+	... 18 common frames omitted
+Caused by: org.springframework.amqp.rabbit.listener.exception.ListenerExecutionFailedException: Listener method 'public void com.evoke.consumer.RabbitMQReceiver.consumeMessageFromQueue(org.springframework.amqp.core.Message) throws com.evoke.exception.InvalidEmployeeNameException' threw exception
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:140) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:106) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:822) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:745) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$001(SimpleMessageListenerContainer.java:97) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$1.invokeListener(SimpleMessageListenerContainer.java:189) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:91) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:286) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	... 12 common frames omitted
+Caused by: com.evoke.exception.InvalidEmployeeNameException: null
+	at com.evoke.consumer.RabbitMQReceiver.consumeMessageFromQueue(RabbitMQReceiver.java:27) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180) ~[spring-messaging-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112) ~[spring-messaging-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:49) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:126) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	... 26 common frames omitted
+
+2021-08-05 17:13:29.812  WARN 328 --- [AMQP Connection 13.235.108.82:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured (Exception message: Connection reset)
+2021-08-05 17:13:29.818 ERROR 328 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: connection error
+2021-08-05 17:13:29.875  INFO 328 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@63300c4b: tags=[{amq.ctag-BCxauDsHkl_cfoXBE2SKwQ=2154-queue1}], channel=Cached Rabbit Channel: AMQChannel(amqp://appuser@13.235.108.82:5672/,1), conn: Proxy@66313f71 Shared Rabbit Connection: SimpleConnection@556a25e2 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 58209], acknowledgeMode=AUTO local queue size=0
+2021-08-05 17:13:34.388  INFO 328 --- [SimpleAsyncTaskExecutor-2] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@4379b72b [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 54432]
+2021-08-05 17:14:25.414  INFO 328 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-05 17:14:25.415  INFO 328 --- [RMI TCP Connection(14)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 17:09:06 IST 2021]; root of context hierarchy
+2021-08-05 17:14:25.417  INFO 328 --- [RMI TCP Connection(14)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-05 17:14:25.651  INFO 328 --- [RMI TCP Connection(14)-127.0.0.1] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2021-08-05 17:14:26.076  INFO 328 --- [RMI TCP Connection(14)-127.0.0.1] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2021-08-05 17:14:26.077  INFO 328 --- [RMI TCP Connection(14)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-05 17:14:26.494  INFO 328 --- [RMI TCP Connection(14)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-05 17:14:26.495  INFO 328 --- [RMI TCP Connection(14)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-08-05 17:15:36.377  INFO 18956 --- [main] c.e.SpringRabbitMQConsumerApplication    : Starting SpringRabbitMQConsumerApplication on EVOKE-CVD-16 with PID 18956 (C:\Users\ypasha\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\spring-rabbitmq-consumer\target\classes started by ypasha in C:\Users\ypasha\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\spring-rabbitmq-consumer)
+2021-08-05 17:15:36.379  INFO 18956 --- [main] c.e.SpringRabbitMQConsumerApplication    : No active profile set, falling back to default profiles: default
+2021-08-05 17:15:36.415  INFO 18956 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 17:15:36 IST 2021]; root of context hierarchy
+2021-08-05 17:15:36.913  INFO 18956 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$5e12b67a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-05 17:15:37.077  INFO 18956 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2021-08-05 17:15:37.084  INFO 18956 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-05 17:15:37.084  INFO 18956 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-05 17:15:37.140  INFO 18956 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/consumer-api]  : Initializing Spring embedded WebApplicationContext
+2021-08-05 17:15:37.140  INFO 18956 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 731 ms
+2021-08-05 17:15:37.249  INFO 18956 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-05 17:15:37.252  INFO 18956 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-05 17:15:37.252  INFO 18956 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-05 17:15:37.253  INFO 18956 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-05 17:15:37.253  INFO 18956 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-05 17:15:37.425  INFO 18956 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 17:15:36 IST 2021]; root of context hierarchy
+2021-08-05 17:15:37.467  INFO 18956 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-05 17:15:37.468  INFO 18956 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-05 17:15:37.488  INFO 18956 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 17:15:37.488  INFO 18956 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 17:15:37.513  INFO 18956 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-05 17:15:37.696  INFO 18956 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-05 17:15:37.700  INFO 18956 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-05 17:15:37.701  INFO 18956 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-05 17:15:37.728  INFO 18956 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-05 17:15:37.729  INFO 18956 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-05 17:15:38.640  INFO 18956 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@448e97e6 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 64922]
+2021-08-05 17:15:39.577  INFO 18956 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2021-08-05 17:15:39.581  INFO 18956 --- [main] c.e.SpringRabbitMQConsumerApplication    : Started SpringRabbitMQConsumerApplication in 3.379 seconds (JVM running for 3.881)
+2021-08-05 17:15:39.582  INFO 18956 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Receiving Message from queue :Employee [empName=emp1234, empId=100]
+2021-08-05 17:15:39.587  INFO 18956 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Receiving Message from queue :Employee [empName=emp1234, empId=100]
+2021-08-05 17:15:39.594  INFO 18956 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Receiving Message from queue :Employee [empName=emp1234, empId=100]
+2021-08-05 17:15:39.617  INFO 18956 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Receiving Message from queue :Employee [empName=emp1234, empId=100]
+2021-08-05 17:15:39.632  INFO 18956 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Receiving Message from queue :Employee [empName=emp1234, empId=100]
+2021-08-05 17:15:39.641  WARN 18956 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.r.RejectAndDontRequeueRecoverer  : Retries exhausted for message (Body:'{"@id":1,"empName":"emp1234","empId":"100"}' MessageProperties [headers={__TypeId__=com.evoke.model.Employee}, timestamp=null, messageId=null, userId=null, receivedUserId=null, appId=null, clusterId=null, type=null, correlationId=null, correlationIdString=null, replyTo=null, contentType=application/json, contentEncoding=UTF-8, contentLength=0, deliveryMode=null, receivedDeliveryMode=PERSISTENT, expiration=null, priority=0, redelivered=false, receivedExchange=2154-exchange, receivedRoutingKey=2154-routingkey, receivedDelay=null, deliveryTag=1, messageCount=0, consumerTag=amq.ctag-IA-ZzkudgsYCictwClwT1g, consumerQueue=2154-queue1])
+
+org.springframework.amqp.rabbit.listener.exception.ListenerExecutionFailedException: Listener method 'public void com.evoke.consumer.RabbitMQReceiver.consumeMessageFromQueue(org.springframework.amqp.core.Message) throws com.evoke.exception.InvalidEmployeeNameException' threw exception
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:140) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:106) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:822) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:745) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$001(SimpleMessageListenerContainer.java:97) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$1.invokeListener(SimpleMessageListenerContainer.java:189) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:91) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:286) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:179) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:115) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at com.sun.proxy.$Proxy66.invokeListener(Unknown Source) ~[na:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.invokeListener(SimpleMessageListenerContainer.java:1276) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:726) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:1219) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:1189) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1500(SimpleMessageListenerContainer.java:97) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1421) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: com.evoke.exception.InvalidEmployeeNameException: null
+	at com.evoke.consumer.RabbitMQReceiver.consumeMessageFromQueue(RabbitMQReceiver.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180) ~[spring-messaging-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112) ~[spring-messaging-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:49) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:126) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	... 26 common frames omitted
+
+2021-08-05 17:15:39.643  WARN 18956 --- [SimpleAsyncTaskExecutor-1] s.a.r.l.ConditionalRejectingErrorHandler : Execution of Rabbit message listener failed.
+
+org.springframework.amqp.rabbit.listener.exception.ListenerExecutionFailedException: Retry Policy Exhausted
+	at org.springframework.amqp.rabbit.retry.RejectAndDontRequeueRecoverer.recover(RejectAndDontRequeueRecoverer.java:45) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.config.StatelessRetryOperationsInterceptorFactoryBean$1.recover(StatelessRetryOperationsInterceptorFactoryBean.java:66) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.config.StatelessRetryOperationsInterceptorFactoryBean$1.recover(StatelessRetryOperationsInterceptorFactoryBean.java:59) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$ItemRecovererCallback.recover(RetryOperationsInterceptor.java:141) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.handleRetryExhausted(RetryTemplate.java:512) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:350) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:179) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:115) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at com.sun.proxy.$Proxy66.invokeListener(Unknown Source) ~[na:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.invokeListener(SimpleMessageListenerContainer.java:1276) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:726) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:1219) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:1189) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1500(SimpleMessageListenerContainer.java:97) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1421) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.amqp.AmqpRejectAndDontRequeueException: org.springframework.amqp.rabbit.listener.exception.ListenerExecutionFailedException: Listener method 'public void com.evoke.consumer.RabbitMQReceiver.consumeMessageFromQueue(org.springframework.amqp.core.Message) throws com.evoke.exception.InvalidEmployeeNameException' threw exception
+	... 18 common frames omitted
+Caused by: org.springframework.amqp.rabbit.listener.exception.ListenerExecutionFailedException: Listener method 'public void com.evoke.consumer.RabbitMQReceiver.consumeMessageFromQueue(org.springframework.amqp.core.Message) throws com.evoke.exception.InvalidEmployeeNameException' threw exception
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:140) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:106) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:822) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:745) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$001(SimpleMessageListenerContainer.java:97) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$1.invokeListener(SimpleMessageListenerContainer.java:189) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:91) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:286) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	... 12 common frames omitted
+Caused by: com.evoke.exception.InvalidEmployeeNameException: null
+	at com.evoke.consumer.RabbitMQReceiver.consumeMessageFromQueue(RabbitMQReceiver.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180) ~[spring-messaging-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112) ~[spring-messaging-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:49) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:126) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	... 26 common frames omitted
+
+2021-08-05 19:11:27.434  WARN 18956 --- [AMQP Connection 13.235.108.82:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured (Exception message: Connection reset)
+2021-08-05 19:11:27.438 ERROR 18956 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: connection error
+2021-08-05 19:11:27.527  INFO 18956 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@71adfedd: tags=[{amq.ctag-IA-ZzkudgsYCictwClwT1g=2154-queue1}], channel=Cached Rabbit Channel: AMQChannel(amqp://appuser@13.235.108.82:5672/,1), conn: Proxy@6d2c2e5b Shared Rabbit Connection: SimpleConnection@448e97e6 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 64922], acknowledgeMode=AUTO local queue size=0
+2021-08-05 19:11:32.668  INFO 18956 --- [SimpleAsyncTaskExecutor-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5b2dceac: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-08-05 19:11:37.798  INFO 18956 --- [SimpleAsyncTaskExecutor-3] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@58a0ebb1: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-08-05 19:11:42.931  INFO 18956 --- [SimpleAsyncTaskExecutor-4] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5c1cd1ee: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-08-05 19:11:48.095  INFO 18956 --- [SimpleAsyncTaskExecutor-5] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@120439f5: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-08-05 19:11:53.229  INFO 18956 --- [SimpleAsyncTaskExecutor-6] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@54a8aa39: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-08-05 19:11:58.383  INFO 18956 --- [SimpleAsyncTaskExecutor-7] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@8378281: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-08-05 19:12:03.393  INFO 18956 --- [SimpleAsyncTaskExecutor-8] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@17834c50: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-08-05 19:12:04.407  INFO 18956 --- [SimpleAsyncTaskExecutor-9] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@12349ae9 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 64945]
+2021-08-05 20:01:06.289  WARN 18956 --- [AMQP Connection 13.235.108.82:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured (Exception message: Connection reset)
+2021-08-05 20:01:06.290 ERROR 18956 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: connection error
+2021-08-05 20:01:06.747  INFO 18956 --- [SimpleAsyncTaskExecutor-9] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@33358fea: tags=[{amq.ctag-rvcP7w2jNNuJDKSpmaSpEg=2154-queue1}], channel=Cached Rabbit Channel: AMQChannel(amqp://appuser@13.235.108.82:5672/,1), conn: Proxy@6d2c2e5b Shared Rabbit Connection: SimpleConnection@12349ae9 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 64945], acknowledgeMode=AUTO local queue size=0
+2021-08-05 20:01:11.871  INFO 18956 --- [SimpleAsyncTaskExecutor-10] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@530990d2: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-08-05 20:01:16.993  INFO 18956 --- [SimpleAsyncTaskExecutor-11] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4ca6ee22: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-08-05 20:01:17.305  INFO 18956 --- [SimpleAsyncTaskExecutor-12] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@4cedd381 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 52097]
+2021-08-05 20:34:56.170  WARN 18956 --- [AMQP Connection 13.235.108.82:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured (Exception message: Connection reset)
+2021-08-05 20:34:56.170 ERROR 18956 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: connection error
+2021-08-05 20:34:57.121  INFO 18956 --- [SimpleAsyncTaskExecutor-12] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@64613edc: tags=[{amq.ctag-CpCxmoahR5ZK0OYOG1OeWQ=2154-queue1}], channel=Cached Rabbit Channel: AMQChannel(amqp://appuser@13.235.108.82:5672/,1), conn: Proxy@6d2c2e5b Shared Rabbit Connection: SimpleConnection@4cedd381 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 52097], acknowledgeMode=AUTO local queue size=0
+2021-08-05 20:34:57.512  INFO 18956 --- [SimpleAsyncTaskExecutor-13] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@4fc7e0d9 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 51294]
+2021-08-05 20:50:39.035  INFO 18956 --- [RMI TCP Connection(156)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-08-05 20:50:39.036  INFO 18956 --- [RMI TCP Connection(156)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Thu Aug 05 17:15:36 IST 2021]; root of context hierarchy
+2021-08-05 20:50:39.039  INFO 18956 --- [RMI TCP Connection(156)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-08-05 20:50:39.138  INFO 18956 --- [RMI TCP Connection(156)-127.0.0.1] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2021-08-05 20:50:40.075  INFO 18956 --- [RMI TCP Connection(156)-127.0.0.1] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2021-08-05 20:50:40.076  INFO 18956 --- [RMI TCP Connection(156)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2021-08-05 20:50:40.257  INFO 18956 --- [RMI TCP Connection(156)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-08-05 20:50:40.257  INFO 18956 --- [RMI TCP Connection(156)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-08-06 13:11:54.379  INFO 30560 --- [main] c.e.SpringRabbitMQConsumerApplication    : Starting SpringRabbitMQConsumerApplication on EVOKE-CVD-16 with PID 30560 (C:\Users\ypasha\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\spring-rabbitmq-consumer\target\classes started by ypasha in C:\Users\ypasha\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\spring-rabbitmq-consumer)
+2021-08-06 13:11:54.388  INFO 30560 --- [main] c.e.SpringRabbitMQConsumerApplication    : No active profile set, falling back to default profiles: default
+2021-08-06 13:11:54.423  INFO 30560 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Fri Aug 06 13:11:54 IST 2021]; root of context hierarchy
+2021-08-06 13:11:55.156  INFO 30560 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$b9db63d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-06 13:11:55.447  INFO 30560 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2021-08-06 13:11:55.458  INFO 30560 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-08-06 13:11:55.460  INFO 30560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-08-06 13:11:55.533  INFO 30560 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/consumer-api]  : Initializing Spring embedded WebApplicationContext
+2021-08-06 13:11:55.533  INFO 30560 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1110 ms
+2021-08-06 13:11:55.649  INFO 30560 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-06 13:11:55.652  INFO 30560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-06 13:11:55.653  INFO 30560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-06 13:11:55.653  INFO 30560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-06 13:11:55.653  INFO 30560 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-06 13:11:55.868  INFO 30560 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39de3d36: startup date [Fri Aug 06 13:11:54 IST 2021]; root of context hierarchy
+2021-08-06 13:11:55.916  INFO 30560 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-06 13:11:55.917  INFO 30560 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-06 13:11:55.943  INFO 30560 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-06 13:11:55.943  INFO 30560 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-06 13:11:55.972  INFO 30560 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-06 13:11:56.294  INFO 30560 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-06 13:11:56.304  INFO 30560 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-08-06 13:11:56.308  INFO 30560 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-08-06 13:11:56.373  INFO 30560 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2021-08-06 13:11:56.374  INFO 30560 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-08-06 13:11:58.753  INFO 30560 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@238b065b [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 59903]
+2021-08-06 13:12:01.527  INFO 30560 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2021-08-06 13:12:01.540  INFO 30560 --- [main] c.e.SpringRabbitMQConsumerApplication    : Started SpringRabbitMQConsumerApplication in 7.381 seconds (JVM running for 8.437)
+2021-08-06 13:12:01.554  INFO 30560 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Receiving Message from queue :Employee [empName=emp100, empId=100]
+2021-08-06 13:12:01.555  INFO 30560 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Message recieved from queue :Employee [empName=emp100, empId=100]
+2021-08-06 13:13:43.225  INFO 30560 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Receiving Message from queue :Employee [empName=emp1001, empId=100]
+2021-08-06 13:13:43.231  INFO 30560 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Receiving Message from queue :Employee [empName=emp1001, empId=100]
+2021-08-06 13:13:43.241  INFO 30560 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Receiving Message from queue :Employee [empName=emp1001, empId=100]
+2021-08-06 13:13:43.266  INFO 30560 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Receiving Message from queue :Employee [empName=emp1001, empId=100]
+2021-08-06 13:13:43.282  INFO 30560 --- [SimpleAsyncTaskExecutor-1] com.evoke.consumer.RabbitMQReceiver      : Receiving Message from queue :Employee [empName=emp1001, empId=100]
+2021-08-06 13:13:43.295  WARN 30560 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.r.RejectAndDontRequeueRecoverer  : Retries exhausted for message (Body:'{"@id":1,"empName":"emp1001","empId":"100"}' MessageProperties [headers={__TypeId__=com.evoke.model.Employee}, timestamp=null, messageId=null, userId=null, receivedUserId=null, appId=null, clusterId=null, type=null, correlationId=null, correlationIdString=null, replyTo=null, contentType=application/json, contentEncoding=UTF-8, contentLength=0, deliveryMode=null, receivedDeliveryMode=PERSISTENT, expiration=null, priority=0, redelivered=false, receivedExchange=2154-exchange, receivedRoutingKey=2154-routingkey, receivedDelay=null, deliveryTag=2, messageCount=0, consumerTag=amq.ctag-zuXOLKeYKBwZ_oZNk0zScA, consumerQueue=2154-queue1])
+
+org.springframework.amqp.rabbit.listener.exception.ListenerExecutionFailedException: Listener method 'public void com.evoke.consumer.RabbitMQReceiver.consumeMessageFromQueue(org.springframework.amqp.core.Message) throws com.evoke.exception.InvalidEmployeeNameException' threw exception
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:140) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:106) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:822) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:745) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$001(SimpleMessageListenerContainer.java:97) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$1.invokeListener(SimpleMessageListenerContainer.java:189) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:91) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:286) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:179) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:115) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at com.sun.proxy.$Proxy66.invokeListener(Unknown Source) ~[na:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.invokeListener(SimpleMessageListenerContainer.java:1276) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:726) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:1219) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:1189) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1500(SimpleMessageListenerContainer.java:97) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1421) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: com.evoke.exception.InvalidEmployeeNameException: null
+	at com.evoke.consumer.RabbitMQReceiver.consumeMessageFromQueue(RabbitMQReceiver.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180) ~[spring-messaging-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112) ~[spring-messaging-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:49) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:126) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	... 26 common frames omitted
+
+2021-08-06 13:13:43.296  WARN 30560 --- [SimpleAsyncTaskExecutor-1] s.a.r.l.ConditionalRejectingErrorHandler : Execution of Rabbit message listener failed.
+
+org.springframework.amqp.rabbit.listener.exception.ListenerExecutionFailedException: Retry Policy Exhausted
+	at org.springframework.amqp.rabbit.retry.RejectAndDontRequeueRecoverer.recover(RejectAndDontRequeueRecoverer.java:45) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.config.StatelessRetryOperationsInterceptorFactoryBean$1.recover(StatelessRetryOperationsInterceptorFactoryBean.java:66) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.config.StatelessRetryOperationsInterceptorFactoryBean$1.recover(StatelessRetryOperationsInterceptorFactoryBean.java:59) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$ItemRecovererCallback.recover(RetryOperationsInterceptor.java:141) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.handleRetryExhausted(RetryTemplate.java:512) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:350) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:179) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:115) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at com.sun.proxy.$Proxy66.invokeListener(Unknown Source) ~[na:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.invokeListener(SimpleMessageListenerContainer.java:1276) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:726) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:1219) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:1189) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1500(SimpleMessageListenerContainer.java:97) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1421) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.amqp.AmqpRejectAndDontRequeueException: org.springframework.amqp.rabbit.listener.exception.ListenerExecutionFailedException: Listener method 'public void com.evoke.consumer.RabbitMQReceiver.consumeMessageFromQueue(org.springframework.amqp.core.Message) throws com.evoke.exception.InvalidEmployeeNameException' threw exception
+	... 18 common frames omitted
+Caused by: org.springframework.amqp.rabbit.listener.exception.ListenerExecutionFailedException: Listener method 'public void com.evoke.consumer.RabbitMQReceiver.consumeMessageFromQueue(org.springframework.amqp.core.Message) throws com.evoke.exception.InvalidEmployeeNameException' threw exception
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:140) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:106) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:822) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:745) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$001(SimpleMessageListenerContainer.java:97) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$1.invokeListener(SimpleMessageListenerContainer.java:189) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:91) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:286) ~[spring-retry-1.2.0.RELEASE.jar:na]
+	... 12 common frames omitted
+Caused by: com.evoke.exception.InvalidEmployeeNameException: null
+	at com.evoke.consumer.RabbitMQReceiver.consumeMessageFromQueue(RabbitMQReceiver.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180) ~[spring-messaging-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112) ~[spring-messaging-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:49) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:126) ~[spring-rabbit-1.7.2.RELEASE.jar:na]
+	... 26 common frames omitted
+
+2021-08-06 14:40:44.775  WARN 30560 --- [AMQP Connection 13.235.108.82:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured (Exception message: Connection reset)
+2021-08-06 14:40:44.779 ERROR 30560 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: connection error
+2021-08-06 14:40:45.093  INFO 30560 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6a9344f5: tags=[{amq.ctag-zuXOLKeYKBwZ_oZNk0zScA=2154-queue1}], channel=Cached Rabbit Channel: AMQChannel(amqp://appuser@13.235.108.82:5672/,1), conn: Proxy@2ad2e4c7 Shared Rabbit Connection: SimpleConnection@238b065b [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 59903], acknowledgeMode=AUTO local queue size=0
+2021-08-06 14:40:50.226  INFO 30560 --- [SimpleAsyncTaskExecutor-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@35880d18: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-08-06 14:40:50.490  INFO 30560 --- [SimpleAsyncTaskExecutor-3] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@6d16473b [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 59443]
+2021-08-06 16:33:54.791  WARN 30560 --- [AMQP Connection 13.235.108.82:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured (Exception message: Connection reset)
+2021-08-06 16:33:54.793 ERROR 30560 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: connection error
+2021-08-06 16:33:55.856  INFO 30560 --- [SimpleAsyncTaskExecutor-3] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5614b292: tags=[{amq.ctag-myGvw5QU_6V9D-l5p-h2DA=2154-queue1}], channel=Cached Rabbit Channel: AMQChannel(amqp://appuser@13.235.108.82:5672/,1), conn: Proxy@2ad2e4c7 Shared Rabbit Connection: SimpleConnection@6d16473b [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 59443], acknowledgeMode=AUTO local queue size=0
+2021-08-06 16:34:00.900  INFO 30560 --- [SimpleAsyncTaskExecutor-4] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2c2b4d00: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-08-06 16:34:06.036  INFO 30560 --- [SimpleAsyncTaskExecutor-5] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@65fd4005: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-08-06 16:34:06.544  INFO 30560 --- [SimpleAsyncTaskExecutor-6] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@1706b402 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 51586]
+2021-08-06 17:58:53.225  WARN 30560 --- [AMQP Connection 13.235.108.82:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured (Exception message: Connection reset)
+2021-08-06 17:58:53.226 ERROR 30560 --- [AMQP Connection 13.235.108.82:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: connection error
+2021-08-06 17:58:53.795  INFO 30560 --- [SimpleAsyncTaskExecutor-6] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@22e651be: tags=[{amq.ctag-o98HUbZPzti4gsnYxA_HTg=2154-queue1}], channel=Cached Rabbit Channel: AMQChannel(amqp://appuser@13.235.108.82:5672/,1), conn: Proxy@2ad2e4c7 Shared Rabbit Connection: SimpleConnection@1706b402 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 51586], acknowledgeMode=AUTO local queue size=0
+2021-08-06 17:58:54.051  INFO 30560 --- [SimpleAsyncTaskExecutor-7] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@4e8d09e8 [delegate=amqp://appuser@13.235.108.82:5672/, localPort= 50879]
